@@ -1,43 +1,63 @@
+/* Nền công nghệ 5.0 */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #fff;
-  color: #111;
-  padding: 20px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  background-size: 400% 400%;
+  animation: gradientBG 20s ease infinite;
+  color: white;
 }
 
-.app-list {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
+/* Hiệu ứng chuyển động nền */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
+/* Danh sách app */
 .app-item {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 10px;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 10px 16px;
+  margin: 12px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
+/* Ảnh app */
 .app-avatar {
-  width: 48px;
-  height: 48px;
+  width: 50px;
+  height: 50px;
   border-radius: 12px;
   object-fit: cover;
-  margin-right: 10px;
 }
 
+/* Tên app */
 .app-name {
-  font-size: 16px;
+  flex: 1;
+  font-size: 17px;
   font-weight: 500;
-  margin-right: 10px;
+  margin-left: 14px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  color: #ffffff;
 }
 
+/* Nút ⚙️ */
 .app-settings {
-  font-size: 20px;
+  font-size: 22px;
   text-decoration: none;
-  color: #007bff;
-  margin-left: auto;
+  color: #00ffff;
+  transition: transform 0.2s ease;
+}
+
+.app-settings:hover {
+  transform: scale(1.2);
 }
