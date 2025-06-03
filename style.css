@@ -1,127 +1,80 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
+/* Reset cơ bản */
+* {
   margin: 0;
-  padding: 20px;
-  text-align: center;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Body với giao diện hiện đại */
+body {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background: #0f0f0f;
+  color: #f0f0f0;
+  padding: 30px 10px;
+  line-height: 1.6;
+}
+
+/* Tiêu đề trang */
 .page-title {
-  font-size: 26px;
-  margin-bottom: 30px;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #00ffe1;
+  text-shadow: 0 0 10px #00ffe1;
 }
 
+/* Danh sách ứng dụng */
 .app-list {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
 }
 
+/* Thẻ ứng dụng */
 .app-card {
-  background: #ffffff;
-  width: 95%;
-  max-width: 500px;
-  display: flex;
-  align-items: center;
+  background: #1b1b1b;
+  border: 1px solid #2c2c2c;
   border-radius: 12px;
-  padding: 15px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 320px;
+  box-shadow: 0 4px 20px rgba(0, 255, 225, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.app-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 30px rgba(0, 255, 225, 0.2);
+}
+
+/* Icon ứng dụng */
 .app-icon {
-  width: 80px;
-  height: 80px;
-  border-radius: 16px;
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
   object-fit: cover;
-  margin-right: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #00ffe1;
 }
 
-.app-info {
-  text-align: left;
-  flex: 1;
-}
-
+/* Thông tin ứng dụng */
 .app-info h2 {
-  font-size: 18px;
-  margin: 0 0 8px;
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+  color: #ffffff;
+  display: inline-block;
 }
 
 .app-info p {
-  font-size: 14px;
-  color: #555;
-  margin: 0 0 10px;
-  line-height: 1.4;
+  font-size: 0.95rem;
+  color: #d1d1d1;
 }
 
-.app-button {
-  display: inline-block;
-  background-color: #007bff;
-  color: white;
-  padding: 8px 14px;
-  font-size: 14px;
-  text-decoration: none;
-  border-radius: 6px;
-  transition: background 0.2s;
-}
-
-.app-button:hover {
-  background-color: #0056b3;
-}
-.app-info {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: center;
-}
-
-.app-info-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
-}
-
-.app-info-text {
-  flex: 1;
-}
-
-.app-button {
-  padding: 8px 16px;
-  background-color: #00bcd4;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  transition: background-color 0.3s;
-}
-
-.app-button:hover {
-  background-color: #0097a7;
-}
-.gear-button {
-  font-size: 20px;
-  padding: 8px 12px;
-  border-radius: 50%;
-  background-color: #2c3e50;
-  color: white;
-  border: none;
-  text-align: center;
-  cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  transition: all 0.3s ease;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.gear-button:hover {
-  background-color: #16a085;
-  transform: rotate(90deg);
-}
+/* Nút bánh răng ⚙️ */
 .gear-button {
   font-size: 20px;
   background: transparent;
-  color: #333; /* hoặc trắng nếu nền tối */
+  color: #00ffe1;
   border: none;
   padding: 0;
   margin-left: 10px;
@@ -134,4 +87,11 @@ body {
 
 .gear-button:hover {
   transform: rotate(90deg);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .app-card {
+    width: 90%;
+  }
 }
