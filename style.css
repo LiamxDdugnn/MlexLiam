@@ -1,63 +1,67 @@
 body {
   margin: 0;
-  padding: 0;
+  padding: 20px;
   font-family: 'Segoe UI', sans-serif;
   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
   color: white;
-  min-height: 100vh;
-  padding: 20px;
 }
 
 h1 {
   text-align: center;
-  margin-bottom: 30px;
   color: #00ffff;
   text-shadow: 0 0 10px #00ffff;
+  margin-bottom: 30px;
 }
 
-.app-list {
+.app-container {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  align-items: center;
 }
 
-.app-item {
+.app-card {
   display: flex;
   align-items: center;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  justify-content: space-between;
+  width: 100%;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 12px;
-  padding: 10px 16px;
+  padding: 12px 20px;
+  box-shadow: 0 4px 20px rgba(0,255,255,0.1);
+  backdrop-filter: blur(10px);
   transition: background 0.3s ease;
 }
 
-.app-item:hover {
-  background: rgba(255, 255, 255, 0.1);
+.app-card:hover {
+  background: rgba(255, 255, 255, 0.12);
 }
 
-.avatar {
+.app-avatar {
   width: 50px;
   height: 50px;
   border-radius: 12px;
+  object-fit: cover;
   margin-right: 15px;
 }
 
-.app-name {
-  flex: 1;
-  font-size: 17px;
+.app-title {
+  flex-grow: 1;
+  font-size: 16px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.gear-link {
-  font-size: 20px;
+.gear-button {
+  font-size: 22px;
   color: #00ffff;
   text-decoration: none;
-  padding: 6px;
   transition: transform 0.2s;
 }
 
-.gear-link:hover {
-  transform: rotate(20deg) scale(1.2);
+.gear-button:hover {
+  transform: rotate(25deg) scale(1.2);
 }
