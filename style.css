@@ -1,75 +1,81 @@
 body {
-  background-color: #000;
-  color: #fff;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   margin: 0;
-  padding: 20px;
+  padding: 0;
+  background: #000;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #fff;
+}
+
+.container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 0 16px;
 }
 
 h2 {
-  text-align: center;
   font-size: 20px;
-  margin-bottom: 24px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 25px;
 }
 
-.app-list {
-  max-width: 600px;
-  margin: auto;
-}
-
-.app-item {
+.app-row {
   display: flex;
   align-items: center;
   margin-bottom: 24px;
 }
 
-.app-icon {
+.icon {
   width: 60px;
   height: 60px;
   border-radius: 14px;
   margin-right: 12px;
+  object-fit: cover;
 }
 
-.app-info {
-  flex-grow: 1;
+.info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.app-name {
+.title {
   font-size: 15px;
   font-weight: 600;
-  color: #fff;
+  color: white;
 }
 
-.app-sub {
+.subtitle {
   font-size: 13px;
   color: #aaa;
   margin-top: 2px;
 }
 
-.app-action {
+.action {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 60px;
+  min-width: 64px;
 }
 
-.get-button {
-  background-color: #2c2c2e;
+.button {
+  background: #2c2c2e;
   color: #0a84ff;
+  font-size: 13px;
   font-weight: 600;
-  padding: 6px 14px;
-  font-size: 14px;
-  border-radius: 999px;
+  padding: 6px 16px;
+  border-radius: 9999px;
   text-decoration: none;
   margin-bottom: 4px;
-  transition: background-color 0.2s;
+  transition: background 0.2s;
 }
 
-.get-button:hover {
-  background-color: #3a3a3c;
+.button:hover {
+  background: #3a3a3c;
 }
 
-.app-note {
+.note {
   font-size: 11px;
-  color: #888;
+  color: #8e8e93;
 }
