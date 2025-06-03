@@ -1,89 +1,44 @@
-/* Reset cơ bản */
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: #0e0e1a;
-  color: #f0f0f0;
-  padding: 30px;
-  line-height: 1.6;
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  color: #111;
+  padding: 20px;
 }
 
-/* Tiêu đề trang */
-.page-title {
-  font-size: 2rem;
-  margin-bottom: 30px;
-  color: #00ffe1;
-  text-align: center;
-  letter-spacing: 1px;
-}
-
-/* Danh sách ứng dụng */
 .app-list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
 }
 
-/* Card ứng dụng */
-.app-card {
-  background: #1a1a2e;
-  border: 1px solid #333;
-  border-radius: 15px;
-  width: 300px;
-  padding: 20px;
-  box-shadow: 0 0 15px rgba(0, 255, 225, 0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.app-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 25px rgba(0, 255, 225, 0.3);
-}
-
-/* Icon ứng dụng */
-.app-icon {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  margin-bottom: 15px;
-}
-
-/* Thông tin app */
-.app-info h2 {
+.app-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-  color: #ffffff;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
 }
 
-/* Mô tả */
-.app-info p {
-  color: #b0b0b0;
-  font-size: 0.95rem;
-  margin-top: 5px;
+.app-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  object-fit: cover;
+  margin-right: 10px;
 }
 
-/* Nút bánh răng ⚙️ */
-.gear-button {
+.app-name {
+  flex: 1;
+  font-size: 16px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.app-download {
   font-size: 20px;
-  background: none;
-  border: none;
-  color: #00ffe1;
   text-decoration: none;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-  margin-left: 10px;
-}
-
-.gear-button:hover {
-  transform: rotate(90deg);
+  color: #007bff;
+  padding-left: 10px;
 }
