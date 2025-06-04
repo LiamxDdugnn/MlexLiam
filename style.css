@@ -78,17 +78,20 @@ body {
   text-align: center;
 }
 
-.get-btn {
-  display: inline-block;
-  background-color: #222;
-  border: 1px solid #2d8bff;
-  color: #2d8bff;
-  border-radius: 999px;
-  padding: 4px 14px;
-  text-decoration: none;
+button {
+  background: #2c2c2e;
+  color: #0a84ff;
+  font-size: 13px;
   font-weight: 600;
-  font-size: 14px;
-  margin-top: 6px;
+  padding: 6px 16px;
+  border-radius: 9999px;
+  text-decoration: none;
+  margin-bottom: 4px;
+  transition: background 0.2s;
+}
+
+.button:hover {
+  background: #3a3a3c;
 }
 
 .tab-bar {
