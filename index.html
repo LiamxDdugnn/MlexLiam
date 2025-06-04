@@ -1,47 +1,66 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <title>App Store Style</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tổng Hợp Mod The Spike</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <div class="header">
-    <a href="https://example.com/back" class="back">&larr; Quay Lại</a>
+    <a href="https://example.com/back" class="back">← Quay Lại</a>
     <h2>Tổng Hợp Mod The Spike</h2>
-    <img src="images/logo.png" class="logo" alt="Logo">
+    <img src="logo.png" class="logo" alt="Logo">
   </div>
 
   <div class="app-list">
+    <!-- Mỗi app một khối -->
     <div class="app">
-      <img src="images/app1.png" class="avatar" alt="App 1" onclick="openPopup()">
-      <div class="app-info">
-        <h3>The Spike Mod</h3>
-        <p>Mod mở khóa full + skin</p>
+      <img src="siwoo.jpg" alt="Siwoo" class="avatar" onclick="openPopup('qr1.png', 'bank1.png', 'Siwoo Mod')">
+      <div class="info">
+        <h3>The Spike - Siwoo Mod</h3>
+        <p>Siwoo Mod</p>
       </div>
-      <a href="https://example.com/get" class="get-btn">NHẬN</a>
+      <div class="action">
+        <a href="https://example.com/siwoo" class="get-btn">NHẬN</a>
+        <span class="inapp">Mua in-app</span>
+      </div>
     </div>
-    <!-- Thêm nhiều app tương tự -->
+
+    <!-- Thêm các app khác giống block trên -->
+    <div class="app">
+      <img src="raul.jpg" alt="Raul" class="avatar" onclick="openPopup('qr2.png', 'bank2.png', 'Raul Mod')">
+      <div class="info">
+        <h3>The Spike - Raul Mod</h3>
+        <p>Raul Mod</p>
+      </div>
+      <div class="action">
+        <a href="https://example.com/raul" class="get-btn">NHẬN</a>
+        <span class="inapp">Mua in-app</span>
+      </div>
+    </div>
+    
+    <!-- Thêm các app khác tại đây -->
   </div>
 
   <!-- Popup -->
-  <div id="popup" class="popup">
+  <div class="popup" id="popup">
     <div class="popup-content">
-      <span class="close" onclick="closePopup()">&times;</span>
-      <h3 class="popup-title">Ủng hộ qua QR hoặc ngân hàng</h3>
-      <img src="images/qr.png" class="popup-img" alt="QR Code">
-      <img src="images/bank.png" class="popup-img" alt="Bank Info">
-      <p class="popup-text">Ngân hàng: MB Bank - 123456789 - LIAM XD</p>
+      <span class="popup-title" id="popup-title">Thông tin App</span>
+      <img id="qr-img" src="" alt="QR" class="popup-img">
+      <img id="bank-img" src="" alt="Bank" class="popup-img">
+      <p class="popup-note">Cảm ơn bạn đã ủng hộ!</p>
+      <button onclick="closePopup()">Đóng</button>
     </div>
   </div>
 
   <!-- Tab Bar -->
   <div class="tab-bar">
-    <a href="https://facebook.com"><img src="images/icon1.png" alt="Tab 1"></a>
-    <a href="https://zalo.me"><img src="images/icon2.png" alt="Tab 2"></a>
-    <a href="https://telegram.org"><img src="images/icon3.png" alt="Tab 3"></a>
-    <a href="https://messenger.com"><img src="images/icon4.png" alt="Tab 4"></a>
+    <a href="https://example.com/home"><img src="icon-home.png"><span>Hôm nay</span></a>
+    <a href="https://example.com/games"><img src="icon-game.png"><span>Trò chơi</span></a>
+    <a href="https://example.com/apps"><img src="icon-app.png"><span>Ứng dụng</span></a>
+    <a href="https://example.com/arcade"><img src="icon-arcade.png"><span>Arcade</span></a>
+    <a href="https://example.com/search"><img src="icon-search.png"><span>Tìm kiếm</span></a>
   </div>
 
   <script src="script.js"></script>
