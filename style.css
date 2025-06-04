@@ -15,7 +15,7 @@ body {
 }
 
 .header h2 {
-  margin: 80px auto 50px; /* kéo xuống nhiều hơn */
+  margin: 40px auto 10px; /* kéo xuống nhiều hơn */
   font-size: 22px;
   font-weight: bold;
 }
@@ -31,7 +31,16 @@ body {
   height: 40px;
   border-radius: 50%;
 }
+.title-box {
+  text-align: center;
+  margin: 30px 0 10px;
+}
 
+.title-box h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0;
+}
 .app-list {
   padding: 10px 16px;
 }
