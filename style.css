@@ -1,24 +1,23 @@
 body {
+  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   background: #000;
-  color: white;
-  margin: 0;
+  color: #fff;
   padding-bottom: 60px;
 }
 
-header {
-  position: relative;
+.header {
   padding: 15px 20px 10px;
+  position: relative;
   text-align: center;
-  background: #000;
 }
 
 .back {
   position: absolute;
+  left: 15px;
   top: 15px;
-  left: 20px;
-  color: #007aff;
   text-decoration: none;
+  color: #007aff;
   font-size: 16px;
 }
 
@@ -29,67 +28,74 @@ header {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 h1 {
-  font-size: 20px;
   margin: 0;
-  margin-top: 10px;
-}
-
-.app {
-  display: flex;
-  align-items: center;
-  padding: 10px 15px;
-  border-bottom: 1px solid #222;
-}
-
-.avatar {
-  width: 60px;
-  height: 60px;
-  border-radius: 12px;
-  margin-right: 10px;
-}
-
-.info {
-  flex-grow: 1;
-}
-
-.title {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
 }
 
-.desc {
-  font-size: 13px;
-  color: #999;
+.app-list {
+  padding: 10px 0;
 }
 
-.get-btn {
+.app-card {
   background: #111;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  margin: 5px 15px;
+  border-radius: 15px;
+}
+
+.app-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  margin-right: 10px;
+}
+
+.app-info {
+  flex-grow: 1;
+}
+
+.app-name {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.app-desc {
+  font-size: 13px;
+  color: #ccc;
+}
+
+.get-button {
+  background: #222;
   border: 1px solid #007aff;
   color: #007aff;
   padding: 6px 16px;
   border-radius: 999px;
-  font-weight: bold;
-  text-decoration: none;
+  font-weight: 600;
   font-size: 14px;
+  text-decoration: none;
 }
 
-footer {
+.tab-bar {
   position: fixed;
   bottom: 0;
   width: 100%;
   background: #111;
+  border-top: 1px solid #333;
   display: flex;
   justify-content: space-around;
-  padding: 10px 0;
-  border-top: 1px solid #333;
+  padding: 8px 0;
 }
 
-.tab {
-  color: white;
-  font-size: 13px;
-  text-align: center;
+.tab-bar a {
+  color: #fff;
+  font-size: 12px;
   text-decoration: none;
 }
