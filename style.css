@@ -148,3 +148,8 @@ body {
   width: 24px;
   height: 24px;
 }
+.header h2 {
+  font-size: 14px;       /* Cho nhỏ lại nếu muốn */
+  margin-top: 8px;       /* Kéo chữ xuống dưới */
+  color: #fff;           /* Đảm bảo chữ trắng */
+}
