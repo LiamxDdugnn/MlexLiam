@@ -1,74 +1,85 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   background-color: #000;
-  color: white;
+  color: #fff;
   font-size: 14px;
   max-width: 400px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 10px 12px;
-  background-color: #111;
+  justify-content: space-between;
+  background-color: #000;
+  padding: 8px 12px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 400px;
+  z-index: 1000;
+  border-bottom: 1px solid #333;
 }
-
 
 .back {
   color: #2d8bff;
   text-decoration: none;
   font-weight: bold;
-  font-size: 13px
+  font-size: 13px;
 }
+
 .logo {
   width: 32px;
   height: 32px;
   border-radius: 50%;
   cursor: pointer;
-  margin-right: 6px;
 }
 
-.main-title {
+.title-box {
   text-align: center;
-  margin: 20px 0 10px;
-  font-size: 16px;
+  margin-top: 60px;
+  margin-bottom: 12px;
+}
+
+.title-box h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
 }
 
 .app-list {
-  padding: 0 12px;
+  padding: 0 12px 60px;
 }
 
-.app {
+.app-item {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  background-color: #1a1a1a;
-  padding: 12px;
+  background-color: #111;
+  padding: 10px;
   border-radius: 10px;
   margin-bottom: 10px;
+  position: relative;
 }
 
-.app-icon {
-  width: 50px;
-  height: 50px;
-  border-radius: 12px;
+.app-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
 }
 
 .app-info {
-  flex-grow: 1;
+  flex: 1;
   margin-left: 10px;
 }
 
-.app-info h3 {
-  margin: 0;
-  font-size: 15px;
+.app-name {
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
 }
 
-.app-info p {
-  margin: 2px 0 0;
+.app-desc {
   font-size: 12px;
   color: #ccc;
 }
@@ -88,61 +99,65 @@ body {
 
 .get-btn:hover {
   background-color: #2d8bff;
-  color: #000
+  color: #000;
 }
 
 .tab-bar {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 8px 0;
-  background-color: #111;
-  border-top: 1px solid #333;
   position: fixed;
   bottom: 0;
   width: 100%;
   max-width: 400px;
+  background-color: #000;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  border-top: 1px solid #333;
 }
 
-.tab-bar img {
-  width: 24px;
-  height: 24px;
+.tab-bar a {
+  color: #2d8bff;
+  font-size: 18px;
+  text-decoration: none;
 }
 
+/* Popup */
 .popup {
-  display: none;
   position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.8);
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  display: none;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  z-index: 999;
 }
 
 .popup-content {
-  background-color: #1e1e1e;
-  padding: 20px;
-  border-radius: 12px;
+  background: #222;
+  padding: 16px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 360px;
   text-align: center;
-  max-width: 300px;
+  position: relative;
 }
 
 .popup-img {
   width: 100%;
-  margin: 10px 0;
   border-radius: 8px;
+  margin: 8px 0;
 }
 
 .popup-text {
-  font-size: 14px;
-  margin: 5px 0;
+  color: #ccc;
+  font-size: 13px;
 }
 
 .close {
+  color: #fff;
+  font-size: 22px;
   position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 24px;
+  top: 8px;
+  right: 12px;
   cursor: pointer;
-  color: white;
 }
