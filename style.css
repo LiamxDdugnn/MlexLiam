@@ -78,20 +78,22 @@ body {
   text-align: center;
 }
 
-button {
-  background: #2c2c2e;
-  color: #0a84ff;
-  font-size: 13px;
-  font-weight: 600;
-  padding: 6px 16px;
-  border-radius: 9999px;
+.get-btn {
+  display: inline-block;
+  background-color: #000;          /* nền đen */
+  border: 1px solid #2d8bff;       /* viền xanh */
+  color: #2d8bff;                  /* chữ xanh */
+  border-radius: 999px;            /* bo tròn */
+  padding: 5px 18px;
   text-decoration: none;
-  margin-bottom: 4px;
-  transition: background 0.2s;
+  font-weight: 600;
+  font-size: 14px;
+  transition: 0.2s;
 }
 
-.button:hover {
-  background: #3a3a3c;
+.get-btn:hover {
+  background-color: #2d8bff;       /* khi hover: nền xanh */
+  color: #000;                     /* chữ đen */
 }
 
 .tab-bar {
