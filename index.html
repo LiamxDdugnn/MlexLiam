@@ -1,96 +1,91 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Tổng Hợp Mod The Spike</title>
-  <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <!-- Header -->
-  <header>
-    <a href="https://liamxddugnn.github.io/" class="back">◀ Quay Lại</a>
+  <div class="header">
+    <a class="back" href="https://liamxddugnn.github.io/">◀ Quay Lại</a>
     <h1>Tổng Hợp Mod The Spike</h1>
-    <img src="logo.png" alt="Logo" class="logo" onclick="openPopup()">
-  </header>
-
-  <!-- Danh sách app -->
-  <main>
-    <div class="app">
-      <img src="siwoo.jpg" class="avatar">
-      <div class="info">
-        <div class="title">The Spike-Siwoo Mod</div>
-        <div class="desc">Siwoo Mod</div>
-      </div>
-      <a href="https://liamxddugnn.github.io/siwoo/" class="get-btn">NHẬN</a>
-    </div>
-
-    <div class="app">
-      <img src="raul.jpg" class="avatar">
-      <div class="info">
-        <div class="title">The Spike-Raul Mod</div>
-        <div class="desc">Raul Mod</div>
-      </div>
-      <a href="https://liamxddugnn.github.io/raul/" class="get-btn">NHẬN</a>
-    </div>
-
-    <div class="app">
-      <img src="isabel.jpg" class="avatar">
-      <div class="info">
-        <div class="title">The Spike-Isabel Skin Mod</div>
-        <div class="desc">Isabel Skin Mod</div>
-      </div>
-      <a href="https://liamxddugnn.github.io/isabel/" class="get-btn">NHẬN</a>
-    </div>
-
-    <div class="app">
-      <img src="jenny.jpg" class="avatar">
-      <div class="info">
-        <div class="title">The Spike-Jenny Mod</div>
-        <div class="desc">Jenny Mod</div>
-      </div>
-      <a href="https://liamxddugnn.github.io/jenny/" class="get-btn">NHẬN</a>
-    </div>
-
-    <div class="app">
-      <img src="nishikawa.jpg" class="avatar">
-      <div class="info">
-        <div class="title">The Spike-Nishikawa School Mod</div>
-        <div class="desc">Nishikawa School Mod</div>
-      </div>
-      <a href="https://liamxddugnn.github.io/nishikawa/" class="get-btn">NHẬN</a>
-    </div>
-
-    <div class="app">
-      <img src="ryuhyun.jpg" class="avatar">
-      <div class="info">
-        <div class="title">The Spike-Ryuhyun</div>
-        <div class="desc">Ryuhyun</div>
-      </div>
-      <a href="https://liamxddugnn.github.io/ryuhyun/" class="get-btn">NHẬN</a>
-    </div>
-  </main>
-
-  <!-- Tab bar -->
-  <footer>
-    <a class="tab" href="https://apple.com">Hôm nay</a>
-    <a class="tab" href="https://store.steampowered.com/">Trò chơi</a>
-    <a class="tab" href="https://liamxddugnn.github.io/">Ứng dụng</a>
-    <a class="tab" href="https://youtube.com/">Arcade</a>
-    <a class="tab" href="https://google.com/">Tìm kiếm</a>
-  </footer>
-
-  <!-- Optional Popup -->
-  <div id="popup" class="popup" style="display:none;">
-    <!-- Bạn có thể thêm nội dung QR, bank info, v.v. -->
+    <img class="logo" src="logo.png" onclick="openPopup()">
   </div>
 
-  <script>
-    function openPopup() {
-      document.getElementById('popup').style.display = 'block';
-    }
-  </script>
+  <!-- Danh sách app -->
+  <div class="app-list">
+    <!-- APP 1 -->
+    <div class="app-card">
+      <img class="app-icon" src="siwoo.jpg">
+      <div class="app-info">
+        <div class="app-name">The Spike-Siwoo Mod</div>
+        <div class="app-desc">Siwoo Mod</div>
+      </div>
+      <a href="https://liamxddugnn.github.io/siwoo/" class="get-button">NHẬN</a>
+    </div>
+
+    <!-- APP 2 -->
+    <div class="app-card">
+      <img class="app-icon" src="raul.jpg">
+      <div class="app-info">
+        <div class="app-name">The Spike-Raul Mod</div>
+        <div class="app-desc">Raul Mod</div>
+      </div>
+      <a href="https://liamxddugnn.github.io/raul/" class="get-button">NHẬN</a>
+    </div>
+
+    <!-- APP 3 -->
+    <div class="app-card">
+      <img class="app-icon" src="isabel.jpg">
+      <div class="app-info">
+        <div class="app-name">The Spike-Isabel Skin Mod</div>
+        <div class="app-desc">Isabel Skin Mod</div>
+      </div>
+      <a href="https://liamxddugnn.github.io/isabel/" class="get-button">NHẬN</a>
+    </div>
+
+    <!-- APP 4 -->
+    <div class="app-card">
+      <img class="app-icon" src="jenny.jpg">
+      <div class="app-info">
+        <div class="app-name">The Spike-Jenny Mod</div>
+        <div class="app-desc">Jenny Mod</div>
+      </div>
+      <a href="https://liamxddugnn.github.io/jenny/" class="get-button">NHẬN</a>
+    </div>
+
+    <!-- APP 5 -->
+    <div class="app-card">
+      <img class="app-icon" src="nishikawa.jpg">
+      <div class="app-info">
+        <div class="app-name">The Spike-Nishikawa School Mod</div>
+        <div class="app-desc">Nishikawa School Mod</div>
+      </div>
+      <a href="https://liamxddugnn.github.io/nishikawa/" class="get-button">NHẬN</a>
+    </div>
+
+    <!-- APP 6 -->
+    <div class="app-card">
+      <img class="app-icon" src="ryuhyun.jpg">
+      <div class="app-info">
+        <div class="app-name">The Spike-Ryuhyun</div>
+        <div class="app-desc">Ryuhyun</div>
+      </div>
+      <a href="https://liamxddugnn.github.io/ryuhyun/" class="get-button">NHẬN</a>
+    </div>
+  </div>
+
+  <!-- Tab bar -->
+  <div class="tab-bar">
+    <a href="https://apple.com">Hôm nay</a>
+    <a href="https://store.steampowered.com/">Trò chơi</a>
+    <a href="https://liamxddugnn.github.io/">Ứng dụng</a>
+    <a href="https://youtube.com/">Arcade</a>
+    <a href="https://google.com/">Tìm kiếm</a>
+  </div>
 
 </body>
 </html>
