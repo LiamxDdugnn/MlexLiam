@@ -16,12 +16,13 @@ body {
   background-color: #111;
 }
 
-.back {
-  color: #fff;
-  text-decoration: none;
-  font-size: 14px;
-}
 
+.back {
+  color: #2d8bff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 13px
+}
 .logo {
   width: 32px;
   height: 32px;
@@ -74,12 +75,20 @@ body {
 
 .get-btn {
   background-color: #000;
-  color: #00ccff;
-  border: 1px solid #00ccff;
-  border-radius: 16px;
-  padding: 5px 14px;
+  border: 1px solid #2d8bff;
+  color: #2d8bff;
+  border-radius: 999px;
+  padding: 4px 14px;
+  font-weight: 600;
   font-size: 13px;
   text-decoration: none;
+  position: absolute;
+  right: 12px;
+}
+
+.get-btn:hover {
+  background-color: #2d8bff;
+  color: #000
 }
 
 .tab-bar {
