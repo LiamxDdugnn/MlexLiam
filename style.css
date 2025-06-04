@@ -1,122 +1,136 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #000;
-  color: #fff;
   margin: 0;
-  padding-bottom: 80px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #000;
+  color: white;
 }
 
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 14px;
-  background-color: #111;
+  padding: 14px 16px 10px;
 }
 
 .header h2 {
-  font-size: 14px;
-  margin-top: 6px;
-  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.header .logo {
+  height: 40px;
 }
 
 .back {
-  color: #00aaff;
+  color: #007aff;
   text-decoration: none;
-  font-size: 14px;
-}
-
-.logo {
-  width: 28px;
-  height: 28px;
+  font-size: 16px;
 }
 
 .app-list {
-  padding: 10px;
+  padding: 0 16px 80px;
 }
 
 .app {
   display: flex;
   align-items: center;
-  background: #1a1a1a;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 .avatar {
   width: 60px;
   height: 60px;
-  border-radius: 12px;
+  border-radius: 15px;
   margin-right: 12px;
   cursor: pointer;
 }
 
-.app-info {
-  flex: 1;
+.info h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
 }
 
-.app-info h3 {
-  margin: 0;
+.info p {
+  margin: 2px 0 0;
+  color: #ccc;
   font-size: 14px;
 }
 
-.app-info p {
-  margin: 2px 0 0;
-  font-size: 12px;
-  color: #aaa;
+.action {
+  margin-left: auto;
+  text-align: center;
 }
 
 .get-btn {
-  background-color: #007aff;
-  color: #fff;
-  padding: 6px 12px;
-  border-radius: 8px;
-  font-size: 12px;
+  display: inline-block;
+  padding: 6px 16px;
+  border: 1px solid #007aff;
+  border-radius: 999px;
+  color: #007aff;
+  background-color: #111;
+  font-weight: bold;
   text-decoration: none;
+  font-size: 14px;
 }
 
+.inapp {
+  display: block;
+  font-size: 11px;
+  color: #888;
+  margin-top: 2px;
+}
+
+/* Popup */
 .popup {
-  display: none;
   position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.85);
+  display: none;
+  justify-content: center;
+  align-items: center;
 }
 
 .popup-content {
-  background: #222;
+  background-color: #1c1c1e;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
   width: 90%;
   max-width: 400px;
-  margin: 60px auto;
-  padding: 20px;
-  border-radius: 12px;
-  text-align: center;
+  color: white;
 }
 
 .popup-img {
   width: 100%;
-  margin: 10px 0;
   border-radius: 10px;
+  margin: 10px 0;
 }
 
 .popup-title {
-  font-size: 16px;
-  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 18px;
 }
 
-.popup-text {
-  font-size: 13px;
-  color: #ccc;
+.popup-note {
+  margin-top: 10px;
+  font-size: 14px;
 }
 
-.close {
-  color: #fff;
-  float: right;
-  font-size: 20px;
-  cursor: pointer;
+.popup button {
+  margin-top: 15px;
+  padding: 6px 16px;
+  background-color: #007aff;
+  color: white;
+  border: none;
+  border-radius: 999px;
 }
 
+/* Tab Bar */
 .tab-bar {
   position: fixed;
   bottom: 0;
@@ -124,7 +138,15 @@ body {
   background-color: #111;
   display: flex;
   justify-content: space-around;
-  padding: 10px 0;
+  padding: 8px 0;
+  border-top: 1px solid #333;
+}
+
+.tab-bar a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 11px;
 }
 
 .tab-bar img {
