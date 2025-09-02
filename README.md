@@ -1,6 +1,6 @@
-# iDevicePatcher
-Chào mừng anh em đến với iDevicePatcher - nơi tôi tổng hợp IPA đã up trên TikTok: @hyper_astear.17 để ae có thể lấy link rồi paste thẳng vào TrollStore để tải. Không cần phải vào link drive chi cho lằng nhằng
-> Đây không phải là repository để patch hay là phần mềm gì hết, chả qua là tôi để cái tên iDevicePatcher cho vui thôi :P
+# Tiennduxngg
+Chào mừng anh em đến với Tiennduxngg - nơi tôi tổng hợp IPA đã up trên TikTok: @hyper_astear.17 để ae có thể lấy link rồi paste thẳng vào TrollStore để tải. Không cần phải vào link drive chi cho lằng nhằng
+> Đây không phải là repository để patch hay là phần mềm gì hết, chả qua là tôi để cái tên Tiennduxngg cho vui thôi :P
 
 -----------------------
 # How To Use
@@ -28,8 +28,8 @@ Sẽ có 3 cách để tải xuông & cài đặt TIPA/IPA cho TrollStore, bao g
 - Trong này đa số là ***TIPA*** hoặc ***IPA DÀNH CHO TROLLSTORE*** nên là ae lưu ý khi cài nhé, kẻo tải trúng bản TrollStore xong cài bằng chứng chỉ xong lại nói tôi nữa thì cũng chịu =)))
 -----------------------
 **Contact/Support Me**
-- TikTok: https://www.tiktok.com/@hyper_astear.17
-- Facebook (Messenger): https://facebook.com/Astear17Clone
-- Zalo: +84 359 623 729
-- Banking: MBBank 014015111234 (NGUYEN THI THUONG)
+- TikTok: https://www.tiktok.com/@liamtdu_
+- Facebook (Messenger): https://facebook.com/Tiennduxngg
+- Zalo: +84 837508030
+- Banking: TPBANK 11111190207 (PHAM TIEN DUNG)
 
