@@ -11,7 +11,7 @@ Sẽ có 3 cách để tải xuông & cài đặt TIPA/IPA cho TrollStore, bao g
   * Bước 3: Dán URL vừa copy rồi nhấn `Install`
   * Bước 4: Đợi đến khi xuất hiện giao diện cài đặt rồi bấm `Install` là xong
 - Cách 2: Tải IPA, install IPA File
-  * Bước 1: Qua phần **[Releases](https://github.com/Astear17/iDevicePatcher/releases/tag/1.0)**, nhấp vào tên của file IPA muốn tải. Nó sẽ tự đông tải file về (hoặc vào **[sourcelink.md(https://github.com/LiamxDdugnn/MlexLiam/blob/main/sourcefile.md)** rồi nhấp vào link ở phía dưới tên IPA muốn tải)
+  * Bước 1: Qua phần **[Releases](https://github.com/Astear17/iDevicePatcher/releases/tag/1.0)**, nhấp vào tên của file IPA muốn tải. Nó sẽ tự đông tải file về (hoặc vào **[sourcelink.md](https://github.com/LiamxDdugnn/MlexLiam/blob/main/sourcefile.md)** rồi nhấp vào link ở phía dưới tên IPA muốn tải)
   * Bước 2: Vào TrollStore, nhấp vào dấu **`+`** ở góc trái màn hình rồi chọn `Install IPA File`
   * Bước 3: Chọn file IPA vừa tải rồi bấm `Install` là xong
 - Cách 3: Tải IPA, install IPA File với máy tính bằng Sideloadly
