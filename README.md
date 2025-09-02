@@ -1,5 +1,5 @@
 # Tiennduxngg
-Chào mừng anh em đến với Tiennduxngg - nơi tôi tổng hợp IPA đã up trên TikTok: @hyper_astear.17 để ae có thể lấy link rồi paste thẳng vào TrollStore để tải. Không cần phải vào link drive chi cho lằng nhằng
+Chào mừng anh em đến với Tiennduxngg - nơi tôi tổng hợp IPA đã up trên TikTok: @liamtdu_ để ae có thể lấy link rồi paste thẳng vào TrollStore để tải. Không cần phải vào link drive chi cho lằng nhằng
 > Đây không phải là repository để patch hay là phần mềm gì hết, chả qua là tôi để cái tên Tiennduxngg cho vui thôi :P
 
 -----------------------
